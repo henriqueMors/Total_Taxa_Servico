@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beubinha Snack Time</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="agradecimento()">
+    <div id="tela"></div>
+        <header>
+            <h1>Calcular Serviço</h1>
+        </header>
+        <section>
+            <img id="img1" src='img1.jpeg' />
+            <div>
+                <h2>Valor da conta R$ <input type="number" name="valcont" id="vconta" placeholder="Digite o total da conta"></h2>    
+            </div>
+
+            <div>
+                <h2>Nivel de atendimento:
+                    <select id="atendimento">
+                        <option value="0.10">Ótimo</option>
+                        <option value="0.05">Bom</option>
+                        <option value="0.02">Regular</option>
+                        <option value="0.01">Ruim</option>
+                        <option value="0">Péssimo</option>
+                    </select>
+                </h2>
+                <h2>
+                    Quantas pessoas dividirão a conta? <input type="number" name="valcont" id="npessoas" placeholder="Nº de Pessoas">
+                </h2>
+                    <br>
+                    <br>
+                        <input type="button" value="Calcular" id="calcular" onclick="calcular()">
+            </div>
+            <div>
+                <h2>Por pessoa: R$<div><p id="vporpes">00,00</p></div></h2>
+            </div>
+
+            <div>
+                <h2>Gorjeta R$: <div><p id="gorj">00,00</p></div></h2>
+                
+            </div>
+
+            <div>
+                <h2>Valor final: R$ <div><p id="vfin">00,00</p></div></h2>
+                
+            </div>
+
+            <div>
+                <h3 id="msg"></h3>
+            </div>
+            
+        </section>
+    </div>
+    <footer>
+        &copy;HenriqueMors
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
